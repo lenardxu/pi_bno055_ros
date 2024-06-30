@@ -3,8 +3,6 @@
 ![test](https://github.com/fm4dd/pi-bno055/workflows/test/badge.svg)
 
 ## Background
-This project basically takes the reference to [this repo](https://github.com/fm4dd/pi-bno055), which is then extended and refactored for two purposes: (1) build a library for subsequent projects; (2) interface with Adafruit BNO055 for configurations and testings. Hereby, sincerely thank [Frank M.](https://github.com/fm4dd) for his sharing in terms of a comprehensive and convenient I2C interface with BNO055.
-
 This is a C driver program for operating a Bosch BNO055 (Adafruit) IMU sensor via I2C on a Raspberry Pi (4 model B). It should also apply to Raspberry Pi 3.
 
 <img src="./ada-bno055.png" alt="ada_bno055" width="273"/>
