@@ -1,0 +1,12 @@
+# debug mode returning debugging infos
+debug: true
+
+# IO paths (Note: the following paths are always relative to the package path)
+ip_imu: "static_imu_x.csv"                           # input file saving imu stream relative to the package main dir
+save: true
+op_acc: "x_imu_acc_sep_data_acq.jpg"
+op_gyr: "x_imu_gyr_sep_data_acq.jpg"
+op_eul: "x_imu_eul_sep_data_acq.jpg"
+
+# plotting content selections
+plot_sel: 3                                       # 0: linear acceleration; 1: angular rate; 2: (absolute) euler angle; 3: all above

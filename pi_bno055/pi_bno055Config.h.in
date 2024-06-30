@@ -1,0 +1,3 @@
+// the configured options and settings for pi_bno055
+#define pi_bno055_VERSION_MAJOR @pi_bno055_VERSION_MAJOR@
+#define pi_bno055_VERSION_MINOR @pi_bno055_VERSION_MINOR@

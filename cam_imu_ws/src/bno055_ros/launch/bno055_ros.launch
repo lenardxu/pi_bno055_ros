@@ -1,0 +1,24 @@
+<launch>
+
+<!--    <arg name="model" default="$(find bno055_ros)/urdf/plane.urdf.xacro"/>-->
+<!--    <arg name="gui" default="true" />-->
+
+<!--    <param name="robot_description" command="$(find xacro)/xacro $(arg model)" />-->
+
+<!--    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" >-->
+<!--    </node>-->
+
+
+    <node pkg="bno055_ros" type="bno055_pub_node" name="bno055_pub" clear_params="true" output="screen">
+        <rosparam file="$(find bno055_ros)/config/bno055_pub.yaml" />
+    </node>
+
+<!--    <node pkg="bno055_ros" type="bno055_sub_node" name="bno055_sub" clear_params="true" output="screen">-->
+<!--        <rosparam file="$(find bno055_ros)/config/bno055_sub.yaml" />-->
+<!--    </node>-->
+
+<!--    <node pkg="bno055_ros" type="imu_tf_broadcaster_node" name="imu_tf_broadcaster" output="screen" />-->
+
+<!--    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find bno055_ros)/config/rviz_config.rviz"/>-->
+
+</launch>

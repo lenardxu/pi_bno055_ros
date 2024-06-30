@@ -1,0 +1,21 @@
+# debug mode returning debugging infos
+debug: false
+
+# config params for interfacing with BNO055
+## software i2cbus
+## (hardware i2cbus (default): "/dev/i2c-1" for RPI 3 & 4, the corresponding GPIO pins are 2 (SDA) and 3 (SCL))
+i2cbus_sw: "/dev/i2c-3"
+## sensor address through i2c bus for Adafruit BNO055
+sensor_addr: "0x28"
+## operation mode
+opr_mode: "accgyro"                           # alternatives: [fusion mode] ndof_mfc, ndof, accgyro (other opr modes don't need to be considered)
+## Pure name of calibration file path which should be located in the config directory
+calib_file: "bno.cfg"
+## the code encoding the axis remap config and sign (see setAxisRemap() in bno055_utils.cpp and section 3.4 for details)
+axis_remap_code: 1                            # alternatives: 0, 1, 2, 3
+
+# frame rate of publishing Imu message
+rate: 100
+# imu topic
+## Here the absolute value of topic is adopted since the rviz_imu_plugin requires the imu topic of such value
+imu_tp: "/sensors/imu"                            # topic for imu stream

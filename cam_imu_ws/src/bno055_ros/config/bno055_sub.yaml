@@ -1,0 +1,3 @@
+imu_tp: "/sensors/imu"                                        # topic for imu stream
+frame_freq: 100.0                                             # frequency of writing Imu data into file
+op_imu: "./data/imu.csv"                                      # output file saving imu stream relative to the package main dir
